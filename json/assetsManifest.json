@@ -1,0 +1,101 @@
+{
+	"assets": {
+		"graphics": [
+			{
+				"id": "audioQuestionImage",
+				"src": "images@2X/audioQuestionImage.png"
+			}
+		],
+		"images": [
+			{
+				"id": "pin",
+				"src": "images@2X/question_images/pin.png"
+			},
+			{
+				"id": "lip",
+				"src": "images@2X/question_images/lip.png"
+			},
+			{
+				"id": "bin",
+				"src": "images@2X/question_images/bin.png"
+			},
+			{
+				"id": "kid",
+				"src": "images@2X/question_images/kid.png"
+			},
+			{
+				"id": "dog",
+				"src": "images@2X/question_images/dog.png"
+			}
+		],
+		"audio": [
+			{
+				"id": "correct",
+				"filename": "audio/correct.mp3",
+				"loop": false
+			},
+			{
+				"id": "arrow",
+				"filename": "audio/arrow.mp3",
+				"loop": false
+			},{
+				"id": "arrowMiss",
+				"filename": "audio/arrowmiss.mp3",
+				"loop": false
+			},
+			{
+				"id": "wrong",
+				"filename": "audio/wrong.mp3",
+				"loop": false
+			},
+			{
+				"id": "click",
+				"filename": "audio/click.mp3",
+				"loop": false
+			},
+			{
+				"id": "button",
+				"filename": "audio/button.mp3",
+				"loop": false
+			},
+			{
+				"id": "messageBox",
+				"filename": "audio/messageBox.mp3",
+				"loop": false
+			},
+			{
+				"id": "introAudio",
+				"filename": "audio/recordings/01_U03_01.mp3",
+				"loop": false
+			}
+		],
+		"recordings": [
+			{
+				"id": "pin",
+				"filename": "audio/recordings/01_U03_06.mp3",
+				"loop": false
+			},
+			{
+				"id": "lip",
+				"filename": "audio/recordings/01_U03_01.mp3",
+				"loop": false
+			},
+			{
+				"id": "bin",
+				"filename": "audio/recordings/01_U03_05.mp3",
+				"loop": false
+			},
+			{
+				"id": "kid",
+				"filename": "audio/recordings/01_U03_11.mp3",
+				"loop": false
+			},
+			{
+				"id": "dog",
+				"filename": "audio/recordings/01_U04_05.mp3",
+				"loop": false
+			}
+		],
+		"spritesheets": []
+	}
+}

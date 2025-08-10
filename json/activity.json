@@ -1,0 +1,47 @@
+{
+	"activity": {
+	    "bank": {
+		   "useBank" : true,
+		   "numberOfQuestionPerGame": 2,
+		   "count": 0
+	    },
+	    "keyboard": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", " "],
+		"settings": {
+			"waitForIntroAudio": true,
+			"realKeyboard": false,
+			"showInstructions": true,
+			"answerTextSize": "small",
+			"shuffle": true,
+			"displayExitButton": true,
+			"displayAudioButton": false,
+			"$useSolidLine": true
+		},
+	    "level":[
+	        {
+	            "word": "this and that",
+	            "audio": "pin",
+	            "image": "pin"
+	        },
+	        {
+	            "word": "up and down",
+	            "audio": "lip",
+	            "image": "lip"
+	        },
+	        {
+	            "word": "left and right",
+	            "audio": "bin",
+	            "image": "bin"
+	        },
+	        {
+	            "word": "in and out",
+	            "audio": "kid",
+	            "image": "kid"
+	        },
+	        {
+	            "word": "down and out",
+	            "audio": "dog",
+	            "image": "dog"
+	        }
+	    ]
+	}
+}
