@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en-CA">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+				<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" href="fonts/css/body/abeezee.css" />
+<link rel="stylesheet" href="fonts/css/title/paytone-one.css" />
+		<link rel="stylesheet" href="css/styles.min.css">
+		
+		<style>
+						
+		</style>
+		
+	</head>
+	
+		<body>
+			
+			
+		<div id="scaleable-wrapper">
+			<div id="game-frame">
+				<div id="top-ui">
+	<div class="button" id="exit-button">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.32 42.32"><path d="M41.56 6.25L26.65 21.16l14.91 14.91a2.59 2.59 0 010 3.66l-1.83 1.83a2.59 2.59 0 01-3.66 0L21.16 26.65 6.25 41.56a2.59 2.59 0 01-3.66 0L.76 39.73a2.59 2.59 0 010-3.66l14.91-14.91L.76 6.25a2.59 2.59 0 010-3.66L2.59.76a2.59 2.59 0 013.66 0l14.91 14.91L36.07.76a2.59 2.59 0 013.66 0l1.83 1.83a2.63 2.63 0 010 3.66z" fill="#fff"/></svg>
+	</div>
+</div>
+				<div id="bottom-ui">
+	<div id="bottom-ui-container">
+		<div id="bottom-ui-game-brand">
+					</div>
+		<div id="bottom-ui-progress-bar">
+			<div class="component" id="progressBar"></div>
+			<div class="component" id="credits">
+				<p>Powered by <a href="https://www.seedlinglearning.com/" target="_blank">Seedling</a></p>
+									<p><a button class="modal-open-button displayCredits" id="openCreditModalButton">Credits</a></p>
+				
+								
+			</div>
+		</div>
+		<div class="component" id="bottom-ui-label">
+								<img src="images@2X/seedling-logo-white.svg" alt="Seedling" />
+					</div>
+		<div class="component" id="bottom-ui-counter">
+			<div id="uiCounter">
+	<div id="emptyCounters">
+		<img class="emptyCounter" id="emptyCounter0" src="images@2X/counterEmpty.svg" width="33.5" height="33" alt="Empty Counter">
+		<img class="emptyCounter" id="emptyCounter1" src="images@2X/counterEmpty.svg" width="33.5" height="33" alt="Empty Counter">
+		<img class="emptyCounter" id="emptyCounter2" src="images@2X/counterEmpty.svg" width="33.5" height="33" alt="Empty Counter">
+	</div>
+	<div id="fullCounters">
+		<img class="fullCounter" id="fullCounter0" src="images@2X/counterFull.svg" width="33.5" height="33" alt="Full Counter">
+		<img class="fullCounter" id="fullCounter1" src="images@2X/counterFull.svg" width="33.5" height="33" alt="Full Counter">
+		<img class="fullCounter" id="fullCounter2" src="images@2X/counterFull.svg" width="33.5" height="33" alt="Full Counter">
+	</div>
+</div>
+		</div>
+	</div>
+</div>
+				<section id="introScreen"  style="background: url(uploads/sites/3/2023/03/game-end.svg) no-repeat center center; background-size: cover;" >
+	<div id="titleContainer">	
+		<h1>Archery Spelling 01</h1>		<h2>Spell each word in the correct order</h2>
+	</div>
+	<button class="playButton" id="introPlayButton"><img src="images@2X/play.svg" width="145" height="145" alt="Play Game" /></button>
+	<p id="loadingText">Loading</p>
+</section>
+				<section id="gameScreen" style="background: url(uploads/sites/3/2023/03/rocket-back.svg) no-repeat center center; background-size: cover;" >
+	
+	<div id="hangman-container" class="component">
+	<div id="hangman-area">
+		<div id="audio-button-container">
+			<div class="button" id="audio-button">
+				<img src="images@2X/audioIcon.svg" alt="audio" width="45" height="36" />
+			</div>
+		</div>
+		<div id="hangman-question-image"></div>
+		<div id="hangman-word">
+			<p>ho___</p>
+		</div>
+		<div class="button" id="hangman-hint-button">
+			<img src="images@2X/hint_icon.svg" alt="hint" width="42" height="34" />
+		</div>
+	</div>
+</div>
+	<div id="keyboard-container">
+	<div id="hangman-keyboard" class="component"></div>
+</div>
+	<div class="component" id="feedback">
+	<div class="feedbackContent" id="correctFeedback"><img src="images@2X/tickIcon.svg" alt="Correct!"/></div>
+	<div class="feedbackContent" id="wrongFeedback"><img src="images@2X/exclamationIcon.svg" alt="Wrong!"/></div>
+</div>
+	
+		<img id="gameTarget" src="uploads/sites/3/2022/02/space-target.png" alt="Target" />
+		
+	<img id="gameArrow" src="images@2X/arrow.svg" alt="Arrow" />		
+		
+	
+</section>
+				<section id="endScreen"  style="background: url(uploads/sites/3/2023/03/game-end-copy.svg) no-repeat center center; background-size: cover;" >
+	<div id="resultsPanel">
+		<h2>Well done!</h2>
+			
+		<p id="scoreSentence">You spelled <span id="score">5</span> names correctly.</p>
+		<div id="questionList">
+			<p><img src="images@2X/exclamationEndScreen.svg"/> 12345678901</p>
+			<p><img src="images@2X/tickEndScreen.svg"/> 12345678901</p>
+		</div>
+		<div id="replayButton">
+			<img src="images@2X/replayEndScreen.svg" alt="Replay Game" />
+			<p>Play again</p>
+		</div>
+	</div>
+</section>
+				
+<div id="instructionsModal1" class="modal">
+	<div class="modal-content">
+		<div class="modal-header">
+			<h1>Animal Decode</h1>
+		</div>
+		<div class="modal-body">
+						<img src="uploads/sites/3/2022/11/Archery-Tutorials-guess2.gif" alt="instructions" /> 
+					</div>
+		<div class="modal-footer">
+			<p>Click the letters in any order to spell each word.</p>
+			<button class="modal-close-button" id="closeInstructionsModal1Button"><img src="images/nextButton.svg" width="58" height="58" alt="Close" /></button>
+		</div>
+	</div>
+</div>
+
+
+<div id="creditModal" class="modal">
+	<div class="modal-content">
+		<div class="modal-header">
+			<h1>Credits</h1>
+		</div>
+		<div class="modal-body">
+			<p><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-7953" src="uploads/sites/3/2024/10/authoring-youtube-preview-300x178.jpg" alt="" width="300" height="178" srcset="uploads/sites/3/2024/10/authoring-youtube-preview-300x178.jpg 300w, uploads/sites/3/2024/10/authoring-youtube-preview-1024x608.jpg 1024w, uploads/sites/3/2024/10/authoring-youtube-preview-768x456.jpg 768w, uploads/sites/3/2024/10/authoring-youtube-preview.jpg 1280w" sizes="auto, (max-width: 300px) 100vw, 300px" />Jennifer Lawrence &#8211; Copyright Tony Woods</p>
+		</div>
+		<div class="modal-footer">
+			<button class="modal-close-button" id="closeCreditModalButton"><img src="images/nextButton.svg" width="58" height="58" alt="Close" /></button>
+		</div>
+	</div>
+</div>
+			</div>
+		</div>
+		
+				<script>
+			var parentThemeUrl = "";
+			var assetsManifest = {
+				"assets": {
+					"images": [
+									{
+							"id": "image0",
+							"src": "uploads/sites/3/2022/01/seedling-cow.png"
+						},
+											{
+							"id": "image1",
+							"src": "uploads/sites/3/2022/02/seedling-sheep-3.png"
+						},
+											{
+							"id": "image2",
+							"src": "uploads/sites/3/2022/01/seedling-crab.png"
+						},
+							
+					],
+					"audio": [
+						{
+							"id": "correct",
+							"filename": parentThemeUrl + "audio/correct.mp3",
+							"loop": false
+						},
+												{
+							"id": "wrong",
+							"filename": parentThemeUrl + "audio/wrong.mp3",
+							"loop": false
+						},
+						{
+							"id": "click",
+							"filename": parentThemeUrl + "audio/click.mp3",
+							"loop": false
+						},
+						{
+							"id": "button",
+							"filename": parentThemeUrl+"audio/button.mp3",
+							"loop": false
+						},
+						{
+							"id": "messageBox",
+							"filename": parentThemeUrl+"audio/messageBox.mp3",
+							"loop": false
+						},
+							
+						{
+							"id": "introAudio",
+							"filename": "",
+							"loop": false
+						}
+							
+					],
+					"recordings": [
+					
+						{
+							"id": "audio0",
+							"filename": "uploads/sites/3/2022/02/cow.mp3",
+							"loop": false
+						},
+					
+						{
+							"id": "audio1",
+							"filename": "uploads/sites/3/2022/02/sheep.mp3",
+							"loop": false
+						},
+					
+						{
+							"id": "audio2",
+							"filename": "uploads/sites/3/2022/02/crab.mp3",
+							"loop": false
+						},
+					],
+				}
+			};
+			var activity = {
+				
+				"bank": {    
+					"useBank" : false,
+					"numberOfQuestionPerGame":  0,
+					"count": 0,
+	    		},
+	
+				"keyboard": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"],
+	"settings": {
+		"shuffle": false,
+		"waitForIntroAudio": false,
+		"realKeyboard": false,
+		"showInstructions": true,
+					"answerTextSize": "large",
+							
+		"displayExitButton":  true,
+		"displayAudioButton": true,
+		"useSolidLine": false,
+		"planeOffset": {
+			"x": 0,
+			"y": 0			}
+		},
+		
+    "level":[
+					
+					{
+			            "word": "cow",
+			            "audio": "audio0",
+			            "image": "image0"
+			        },
+					
+					{
+			            "word": "sheep",
+			            "audio": "audio1",
+			            "image": "image1"
+			        },
+					
+					{
+			            "word": "crab",
+			            "audio": "audio2",
+			            "image": "image2"
+			        },
+			    ]
+			};
+		</script>
+		
+		<!-- OFFLINE OPTION -->
+		<script src="libs/jquery.min.js"></script>
+		<script src="libs/createjs-2015.11.26.min.js"></script>
+		<script src="libs/howler.min.js"></script>
+		
+		<script src="libs/gsap.min.js"></script>
+		<script src="libs/jquery-ui.min.js"></script>
+		<script src="libs/jquery.ui.touch-punch.min.js"></script>
+		<script src="libs/seedrandom.min.js"></script>
+		
+		<script src="js/main.min.js"></script>
+		
+				
+	</body>
+</html>
+
