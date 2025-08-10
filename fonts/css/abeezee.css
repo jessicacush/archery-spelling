@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'game_font';
+    src: url('../font-files/ABeeZee-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'game_font';
+    src: url('../font-files/ABeeZee-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}

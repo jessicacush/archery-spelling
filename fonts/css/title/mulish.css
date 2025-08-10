@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'title_font';
+    src: url('../../font-files/Mulish-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'title_font';
+    src: url('../../font-files/Mulish-Italic-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: italic;
+}

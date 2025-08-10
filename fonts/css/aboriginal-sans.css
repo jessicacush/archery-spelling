@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'game_font';
+    src: url('../font-files/AboriginalSansREGULAR.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'game_font';
+    src: url('../font-files/AboriginalSansBOLD.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
