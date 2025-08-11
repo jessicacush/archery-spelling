@@ -279,8 +279,35 @@
 		<script src="libs/jquery-ui.min.js"></script>
 		<script src="libs/jquery.ui.touch-punch.min.js"></script>
 		<script src="libs/seedrandom.min.js"></script>
-		
-<script src="js/main.min.js?v=23"></script>
+
+			<script>
+  function enableAudio() {
+    try {
+      if (window.Howler && Howler.ctx && Howler.ctx.state !== 'running') {
+        Howler.ctx.resume();
+      }
+      if (window.audio && audio.click && audio.click.play) {
+        audio.click.mute(true);
+        audio.click.play();
+        setTimeout(function () {
+          audio.click.stop();
+          audio.click.mute(false);
+        }, 50);
+      }
+    } catch (e) {}
+  }
+
+  window.addEventListener('pointerdown', enableAudio, { once: true, passive: true });
+  window.addEventListener('touchstart', enableAudio, { once: true, passive: true });
+  window.addEventListener('click', enableAudio, { once: true, passive: true });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var btn = document.getElementById('introPlayButton');
+    if (btn) btn.addEventListener('click', enableAudio, { once: true });
+  });
+</script>
+
+<script src="js/main.min.js?v=24"></script>
 
 					
 	</body>
